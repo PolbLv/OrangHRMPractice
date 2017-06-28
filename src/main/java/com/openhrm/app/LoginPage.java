@@ -3,6 +3,7 @@ package com.openhrm.app;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import ru.yandex.qatools.allure.annotations.Step;
 
 /**
  * Created by LVIVSOFT\spolyakov on 28.06.17.
@@ -16,10 +17,24 @@ public class LoginPage extends AbstractPage {
     private WebElement passwordInput;
 
     @FindBy(id = "btnLogin")
-    private WebElement clickBurronLogin;
+    private WebElement clickButtonLogin;
 
 
     public LoginPage(WebDriver driver){
         super(driver);
     }
+    @Step("Fill Username field with value <{0}>")
+    public void fillUsernameField(String username) {
+        userNameInput.sendKeys(username);
+    }
+    @Step("Fill Password field with value <{0}>")
+    public void fillPasswordField(String password){
+        passwordInput.sendKeys(password);
+    }
+
+    @Step("Click Login Button")
+    public void clickLoginButton(){
+        clickButtonLogin.click();
+    }
+
 }

@@ -1,5 +1,6 @@
 package com.orange.test;
 
+import com.openhrm.app.LoginPage;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
@@ -8,9 +9,15 @@ import org.testng.annotations.Test;
  */
 public class LoginWithAdminTest extends AbstractTest {
 
+    private LoginPage loginPage;
+
     @Test
     public void testAdminIsAbleToLogin() {
-        orangeHRM.openLoginPage();
+
+        loginPage = orangeHRM.openLoginPage();
+        loginPage.fillUsernameField("Admin");
+        loginPage.fillPasswordField("admin");
+        loginPage.clickLoginButton();
     }
 
     @AfterClass(alwaysRun = true)
