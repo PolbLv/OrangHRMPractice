@@ -7,6 +7,8 @@ public class User {
 
     private final String username;
 
+    private final String name;
+
     public String getUsername() {
         return username;
     }
@@ -15,11 +17,16 @@ public class User {
         return password;
     }
 
+    public String getName(){
+        return name;
+    }
+
     private final String password;
 
-    public User(String username, String password) {
+    public User(String username, String password, String name) {
         this.username = username;
         this.password = password;
+        this.name = name;
     }
 
     @Override

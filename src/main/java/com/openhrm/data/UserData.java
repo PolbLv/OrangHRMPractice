@@ -9,11 +9,11 @@ public class UserData {
 //    public static final String ADMIN_PASSWORD = "admin";
 
 
-    public static final User ADMIN_USER = new User("Admin", "admin");
+    public static final User ADMIN_USER = new User("Admin", "admin", "Admin");
 
-    public static final User COSTUMER_USER = new User("Customer", "customer");
+    public static final User COSTUMER_USER = new User("Customer", "customer", "customer");
 
-    public static final User FIONA = new User("fiona.grace", "fiona.grace");
+    public static final User FIONA = new User("fiona.grace", "fiona.grace", "Fiona");
 
 }
 

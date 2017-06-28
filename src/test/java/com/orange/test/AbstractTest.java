@@ -1,7 +1,6 @@
 package com.orange.test;
 
 import com.openhrm.app.OrangeHRM;
-import org.testng.annotations.AfterClass;
 import com.openhrm.tools.App;
 import com.openhrm.tools.AppTest;
 
@@ -17,8 +16,4 @@ public class AbstractTest  implements AppTest {
         return this.orangeHRM;
     }
 
-    @AfterClass(alwaysRun = true)
-    public void tearDown(){
-        orangeHRM.close();
-    }
 }
