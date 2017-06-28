@@ -2,8 +2,8 @@ package com.orange.test;
 
 import com.openhrm.app.OrangeHRM;
 import org.testng.annotations.AfterClass;
-import tools.App;
-import tools.AppTest;
+import com.openhrm.tools.App;
+import com.openhrm.tools.AppTest;
 
 /**
  * Created by LVIVSOFT\spolyakov on 28.06.17.

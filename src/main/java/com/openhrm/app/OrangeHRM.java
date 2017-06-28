@@ -5,8 +5,8 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import ru.yandex.qatools.allure.annotations.Attachment;
 import ru.yandex.qatools.allure.annotations.Step;
-import tools.App;
-import tools.Browser;
+import com.openhrm.tools.App;
+import com.openhrm.tools.Browser;
 
 /**
  * Created by LVIVSOFT\spolyakov on 28.06.17.

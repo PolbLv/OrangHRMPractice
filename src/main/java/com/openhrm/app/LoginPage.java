@@ -1,5 +1,6 @@
 package com.openhrm.app;
 
+import com.openhrm.data.User;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -35,6 +36,12 @@ public class LoginPage extends AbstractPage {
     @Step("Click Login Button")
     public void clickLoginButton(){
         clickButtonLogin.click();
+    }
+
+    public void loginAS(User user){
+        fillUsernameField(user.getUsername());
+        fillPasswordField(user.getPassword());
+        clickLoginButton();
     }
 
 }
