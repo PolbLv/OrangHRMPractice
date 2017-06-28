@@ -37,11 +37,11 @@ public class LoginPage extends AbstractPage {
     public void clickLoginButton(){
         clickButtonLogin.click();
     }
-
-    public void loginAS(User user){
+    @Step ("Login as <{0}>")
+    public DashboardPage loginAS(User user){
         fillUsernameField(user.getUsername());
         fillPasswordField(user.getPassword());
         clickLoginButton();
+        return new DashboardPage(driver);
     }
-
 }

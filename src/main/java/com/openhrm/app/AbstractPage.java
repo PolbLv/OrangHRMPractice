@@ -10,7 +10,7 @@ import ru.yandex.qatools.allure.annotations.Step;
  */
 public class AbstractPage {
 
-    private WebDriver driver;
+    protected WebDriver driver;
 
     protected AbstractPage(WebDriver driver){
         this.driver = driver;
