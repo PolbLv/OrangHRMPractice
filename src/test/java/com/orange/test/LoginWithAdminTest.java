@@ -31,7 +31,7 @@ public class LoginWithAdminTest extends AbstractTest {
 
     @DataProvider(name = "testData")
     public static Object [][] testData(){
-        return new Object[][] {{ADMIN_USER}, {FIONA}};
+        return new Object[][] {{ADMIN_USER}, /*{FIONA}*/};
     }
 
     @AfterMethod(alwaysRun = true)
